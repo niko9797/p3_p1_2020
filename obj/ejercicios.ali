@@ -1,0 +1,96 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ejercicios%b		ejercicios.adb		4af0befd NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+
+U ejercicios%s		ejercicios.ads		821a2b16 EE NE OO PK
+
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D ejercicios.ads	20191014112132 821a2b16 ejercicios%s
+D ejercicios.adb	20191014110848 661e4086 ejercicios%b
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [replacechars ejercicios 12 14 none]
+G c Z s b [binadd ejercicios 24 13 none]
+G c Z s b [mixarray ejercicios 36 13 none]
+G c Z s b [mixnumber ejercicios 39 14 none]
+G c Z s b [extendarray ejercicios 42 13 none]
+G c Z s b [multiplicacionvector ejercicios 45 14 none]
+G c Z s s [Tbin_tBIP ejercicios 8 4 none]
+G c Z s s [Tt_arrayBIP ejercicios 10 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|1r6 1r23
+X 6 a-textio.ads
+57K13*Text_IO 727e16 9|1w10 1r27
+X 8 ejercicios.ads
+1K9*Ejercicios 48l5 48e15 9|3b14 114l5 114t15
+5i4*precision{positive} 8r44
+7I12*Bool_val{integer} 8r58
+8A9*bin_t(7I12)<integer> 24r31 24r48 24r62 9|40r31 40r48 40r62 45r19
+10A9*t_array(integer)<integer> 36r27 36r40 36r56 42r63 45r54 9|78r27 78r40
+. 78r56 96r63 105r54
+12U14*replaceChars 12=28 12>53 12>80 9|7b14 38l8 38t20
+12a28 inputStr{string} 14r20 14r33 15r17 17r8 9|7b28 16r16 19r38 26r16 27m16
+12a53 replacementStr{string} 14r43 16r8 18r8 9|7b53 21r19 24r38 26r28
+12e80 replacementChar{character} 14r59 19r8 9|7b80 27r29
+24V13*binAdd{8A9} 24>21 24>38 26r18 31r53 32r53 33r97 33r121 9|40b13 76l8
+. 76t14
+24a21 bin_num1{8A9} 26r36 27r27 27r45 31r12 32r12 33r12 33r54 9|40b21 50r18
+24a38 bin_num2{8A9} 26r46 28r20 28r39 31r35 32r35 33r35 33r77 9|40b38 50r32
+27i22 x{integer} 27r54
+28i15 x{integer} 28r48
+36V13*mixArray{10A9} 36>23 36>36 9|78b13 85l8 85t16
+36a23 v1{10A9} 9|78b23
+36a36 v2{10A9} 9|78b36
+39U14*mixNumber 39=25 9|87b14 94l8 94t17
+39i25 num{positive} 9|87b25
+42V13*extendArray{10A9} 42>26 42>41 9|96b13 103l8 103t19
+42i26 num1{integer} 9|96b26
+42i41 num2{integer} 9|96b41
+45U14*multiplicacionVector 45=35 45>63 9|105b14 111l8 111t28
+45a35 inputArray{10A9} 9|105b35
+45i63 num{integer} 9|105b63
+X 9 ejercicios.adb
+12i7 J{positive} 16r13 18r43 19r32 26r25 27r25 35m10 35r14
+13i7 K{positive} 21r16 23r46 24r35 26r43 30m13 30r16 33m10
+44i7 J{integer} 49r13 50r27 50r41 51r43 53r32 53r46 53r52 56r23 59r23 62r23
+. 66m10 66r13
+45a7 resultado{8|8A9} 56m13 59m13 62m13 73r17
+46i7 acarreo{integer} 50r46 52r32 52r47 55m13 60m13 63m13 70r10
+47i7 temp{integer} 50m10 54r13 58r16
+

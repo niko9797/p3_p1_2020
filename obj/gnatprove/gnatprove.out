@@ -1,0 +1,49 @@
+Summary of SPARK analysis
+=========================
+
+--------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer      Provers   Justified   Unproved
+--------------------------------------------------------------------------------------------------------
+Data Dependencies                 2          2          .          .            .           .          .
+Flow Dependencies                 2          2          .          .            .           .          .
+Initialization                    1          1          .          .            .           .          .
+Non-Aliasing                      .          .          .          .            .           .          .
+Run-time Checks                  16          .          .          .    16 (CVC4)           .          .
+Assertions                       11          .          .          .    11 (CVC4)           .          .
+Functional Contracts              5          .          .          .     2 (CVC4)           .          3
+LSP Verification                  .          .          .          .            .           .          .
+--------------------------------------------------------------------------------------------------------
+Total                            37    5 (14%)          .          .     29 (78%)           .     3 (8%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 4 units
+in unit ejercicios, 7 subprograms and packages out of 7 analyzed
+  Ejercicios at ejercicios.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Ejercicios.binAdd at ejercicios.ads:24 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 14 checks out of 17 proved
+  Ejercicios.extendArray at ejercicios.ads:42 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
+  Ejercicios.mixArray at ejercicios.ads:36 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
+  Ejercicios.mixNumber at ejercicios.ads:39 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
+  Ejercicios.multiplicacionVector at ejercicios.ads:45 flow analyzed (0 errors, 0 checks and 3 warnings) and proved (0 checks)
+  Ejercicios.replaceChars at ejercicios.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (15 checks)
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:5 skipped
+in unit test_assertions, 0 subprograms and packages out of 4 analyzed
+  Test_Assertions.Assert_False at test_assertions.ads:9 skipped
+  Test_Assertions.Assert_False at test_assertions.ads:15 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:6 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:12 skipped
+in unit tests, 0 subprograms and packages out of 12 analyzed
+  Tests.Test_1_1 at tests.ads:3 skipped
+  Tests.Test_1_2 at tests.ads:4 skipped
+  Tests.Test_1_3 at tests.ads:5 skipped
+  Tests.Test_1_4 at tests.ads:6 skipped
+  Tests.Test_1_5 at tests.ads:7 skipped
+  Tests.Test_2_1 at tests.ads:9 skipped
+  Tests.Test_2_2 at tests.ads:10 skipped
+  Tests.Test_2_3 at tests.ads:11 skipped
+  Tests.Test_2_4 at tests.ads:12 skipped
+  Tests.Test_2_5 at tests.ads:13 skipped
+  Tests.Test_2_6 at tests.ads:14 skipped
+  Tests.Test_2_7 at tests.ads:15 skipped

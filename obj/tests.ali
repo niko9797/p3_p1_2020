@@ -1,0 +1,162 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tests%b		tests.adb		5d7f8a8e NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ejercicios%s		ejercicios.adb		ejercicios.ali
+W test_assertions%s	test_assertions.adb	test_assertions.ali
+
+U tests%s		tests.ads		222df2be EE NE OO PK
+
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D ejercicios.ads	20191014112132 821a2b16 ejercicios%s
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20181020094946 c1dd7c95 test_assertions%s
+D tests.ads		20191014012816 222df2be tests%s
+D tests.adb		20191014012720 9261fade tests%b
+G a e
+G c Z s b [test_1_1 tests 3 14 none]
+G c Z s b [test_1_2 tests 4 14 none]
+G c Z s b [test_1_3 tests 5 14 none]
+G c Z s b [test_1_4 tests 6 14 none]
+G c Z s b [test_1_5 tests 7 14 none]
+G c Z s b [test_2_1 tests 9 14 none]
+G c Z s b [test_2_2 tests 10 14 none]
+G c Z s b [test_2_3 tests 11 14 none]
+G c Z s b [test_2_4 tests 12 14 none]
+G c Z s b [test_2_5 tests 13 14 none]
+G c Z s b [test_2_6 tests 14 14 none]
+G c Z s b [test_2_7 tests 15 14 none]
+G r c none [test_1_1 tests 3 14 none] [replacechars ejercicios 12 14 none]
+G r c none [test_1_1 tests 3 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_1_2 tests 4 14 none] [replacechars ejercicios 12 14 none]
+G r c none [test_1_2 tests 4 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_1_3 tests 5 14 none] [replacechars ejercicios 12 14 none]
+G r c none [test_1_3 tests 5 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_1_4 tests 6 14 none] [replacechars ejercicios 12 14 none]
+G r c none [test_1_4 tests 6 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_1_5 tests 7 14 none] [replacechars ejercicios 12 14 none]
+G r c none [test_1_5 tests 7 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_1 tests 9 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_1 tests 9 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_2 tests 10 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_2 tests 10 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_3 tests 11 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_3 tests 11 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_4 tests 12 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_4 tests 12 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_5 tests 13 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_5 tests 13 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_6 tests 14 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_6 tests 14 14 none] [assert_true test_assertions 12 14 none]
+G r c none [test_2_7 tests 15 14 none] [binadd ejercicios 24 13 none]
+G r c none [test_2_7 tests 15 14 none] [assert_true test_assertions 12 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 26|1r6 1r28
+X 6 a-textio.ads
+57K13*Text_IO 727e16 26|1w10 1r32
+508U14*Put_Line 26|22s7 24s7 29s10 31s10 45s10 47s10 61s10 63s10 77s10 79s10
+. 93s10 95s10 119s10 121s10 133s10 135s10 147s10 149s10 161s10 163s10 175s10
+. 177s10 189s10 191s10 203s10 205s10
+X 8 ejercicios.ads
+1K9*Ejercicios 48e15 26|2w6 2r28
+7I12*Bool_val{integer}
+8A9*bin_t(7I12)<integer> 26|111r23 112r23 113r22 126r23 127r23 140r23 141r23
+. 154r23 155r23 168r23 169r23 182r23 183r23 196r23 197r23
+12U14*replaceChars 26|23s7 40s7 56s7 72s7 88s7
+24V13*binAdd{8A9} 26|115s20 129s20 143s20 157s20 171s20 185s20 199s20
+X 24 test_assertions.ads
+3K9*Test_Assertions 18e20 26|3w6 3r28
+4X4*Assertion_Error 26|28r12 44r12 60r12 76r12 92r12 118r12 132r12 146r12
+. 160r12 174r12 188r12 202r12
+12U14*Assert_True 26|25s7 41s7 57s7 73s7 89s7 115s7 129s7 143s7 157s7 171s7
+. 185s7 199s7
+X 25 tests.ads
+1K9*Tests 17l5 17e10 26|5b14 208l5 208t10
+3U14*Test_1_1 26|16b14 32l8 32t16
+4U14*Test_1_2 26|34b14 48l8 48t16
+5U14*Test_1_3 26|50b14 64l8 64t16
+6U14*Test_1_4 26|66b14 80l8 80t16
+7U14*Test_1_5 26|82b14 96l8 96t16
+9U14*Test_2_1 26|109b14 122l8 122t16
+10U14*Test_2_2 26|124b14 136l8 136t16
+11U14*Test_2_3 26|138b14 150l8 150t16
+12U14*Test_2_4 26|152b14 164l8 164t16
+13U14*Test_2_5 26|166b14 178l8 178t16
+14U14*Test_2_6 26|180b14 192l8 192t16
+15U14*Test_2_7 26|194b14 206l8 206t16
+X 26 tests.adb
+17a7 Msg{string} 25r37 29r20 31r20
+18a7 in1{string} 22r17 23m21 23r21 24r17 25r20
+19a7 in2{string} 23r26
+20e7 char1{character} 23r31
+35a7 Msg{string} 41r38 45r20 47r20
+36a7 in1{string} 40m21 40r21 41r20
+37a7 in2{string} 40r26
+38e7 char1{character} 40r31
+51a7 Msg{string} 57r30 61r20 63r20
+52a7 in1{string} 56m21 56r21 57r20
+53a7 in2{string} 56r26
+54e7 char1{character} 56r31
+67a7 Msg{string} 73r33 77r20 79r20
+68a7 in1{string} 72m21 72r21 73r20
+69a7 in2{string} 72r26
+70e7 char1{character} 72r31
+83a7 Msg{string} 89r33 93r20 95r20
+84a7 in1{string} 88m21 88r21 89r20
+85a7 in2{string} 88r26
+86e7 char1{character} 88r31
+110a7 Msg{string} 115r46 119r20 121r20
+111a7 bin1{8|8A9} 115r28
+112a7 bin2{8|8A9} 115r33
+113a7 res{8|8A9} 115r41
+125a7 Msg{string} 129r52 133r20 135r20
+126a7 bin1{8|8A9} 129r28
+127a7 bin2{8|8A9} 129r33
+139a7 Msg{string} 143r56 147r20 149r20
+140a7 bin1{8|8A9} 143r28
+141a7 bin2{8|8A9} 143r33
+153a7 Msg{string} 157r56 161r20 163r20
+154a7 bin1{8|8A9} 157r28
+155a7 bin2{8|8A9} 157r33
+167a7 Msg{string} 171r56 175r20 177r20
+168a7 bin1{8|8A9} 171r28
+169a7 bin2{8|8A9} 171r33
+181a7 Msg{string} 185r52 189r20 191r20
+182a7 bin1{8|8A9} 185r28
+183a7 bin2{8|8A9} 185r33
+195a7 Msg{string} 199r52 203r20 205r20
+196a7 bin1{8|8A9} 199r28
+197a7 bin2{8|8A9} 199r33
+
